@@ -21,7 +21,7 @@ const timeago = datetime.isBefore(dayjs().subtract(1, 'w')) ? datetime.format('H
     <div class="dot"></div>
     <div class="time">
       <a href={`${SITE_URL}posts/${post.id}`} title={post.datetime} class="item-link">
-        <time datetime={post.datetime} title={timeago}>{timeago}</time>
+        <time datetime={post.datetime} title={timeago}>{timeago}</time> - 请勿相信文中广告
       </a>
     </div>
   </div>
