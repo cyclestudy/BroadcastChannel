@@ -31,10 +31,7 @@ const seoParams = {
       url: canonical,
       image: channel?.avatar ? channel.avatar : origin + '/favicon.ico',
     },
-    optional: {
-      description: seo?.text ?? channel?.description,
-      locale: getEnv(import.meta.env, Astro, 'LOCALE'),
-    },
+    
   },
   extend: {
     link: [{ rel: 'icon', href: channel?.avatar ? channel?.avatar : '/favicon.svg' }],
