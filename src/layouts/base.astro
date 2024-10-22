@@ -57,15 +57,7 @@ const FOOTER_INJECT = getEnv(import.meta.env, Astro, 'FOOTER_INJECT')
         navigation: auto; /* enabled */
       }
     </style>
-    <SEO
-      titleTemplate={`%s | ${channel?.title}`}
-      titleDefault={[channel?.title, seoParams.description].filter(Boolean).join(' - ')}
-      twitter={{
-        card: 'summary_large_image',
-        creator: twitter ? `@${twitter}` : undefined,
-      }}
-      {...seoParams}
-    />
+    
     <Fragment set:html={HEADER_INJECT} />
   </head>
 
