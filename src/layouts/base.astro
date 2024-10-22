@@ -42,9 +42,7 @@ const FOOTER_INJECT = getEnv(import.meta.env, Astro, 'FOOTER_INJECT')
     <meta name="theme-color" content="#f4f1ec" />
     <link rel="alternate" type="application/rss+xml" title={channel?.title} href={origin + '/rss.xml'} />
     <style is:inline>
-      @view-transition {
-        navigation: auto; /* enabled */
-      }
+     
     </style>
     
     <Fragment set:html={HEADER_INJECT} />
